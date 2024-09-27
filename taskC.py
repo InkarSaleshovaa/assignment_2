@@ -20,7 +20,7 @@ class MulNB:
 			for j in range(x.shape[1]):
 				self.prob_x[i][j] = (x[y == i][:, j].sum() + self.laplace) / (y[y == i].size + x.shape[1] * self.laplace)
 			
-	# predict p(x1, x2, ... | c) = ln( p(x1 | c) ) + ln( p(x2 | c) ) + ...
+	# predict p(x1, x2, ... & c) = ln( p(x1 | c) ) + ln( p(x2 | c) ) + ... + ln( p(c) )
 	def predict(self, x):
 		x = x.toarray()
 		ret = np.zeros((x.shape[0], self.classes))
@@ -40,7 +40,7 @@ if __name__=='__main__':
 	vec = CountVectorizer(binary=True)
 
 	# read IMBD data
-	df = pd.read_csv('data.csv')[:3000]
+	df = pd.read_csv('data.csv')[:3000] # data.csv - IMBD dataset
 	X = df['review']
 	Y = df['sentiment'].map(lambda x: 0 if x == 'negative' else 1)
 
