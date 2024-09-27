@@ -15,7 +15,7 @@ class MulNB:
 	# p(x1 | c) = count(x1 & c) / count(c)
 	def fit(self, x, y):
 		for i in range(self.classes):
-			self.prob_c[i] = y[y == i].size / y.size
+			self.prob_c[i] = x[y == i].sum() / x.sum() # count(any tokens | class i) / count(any tokens)
 
 			for j in range(x.shape[1]):
 				self.prob_x[i][j] = (x[y == i][:, j].sum() + self.laplace) / (y[y == i].size + x.shape[1] * self.laplace)
