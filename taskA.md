@@ -1,10 +1,10 @@
 # The first part
 
-xxSpam messages:xx
+**Spam messages:**
 - M1: Buy bicycles for free
 - M2: Bicycles and motorbikes for free
 - M3: Motorbikes rides easy and free
-xxNormal messages:xx
+**Normal messages:**
 - M4: Let's go ride bicycles
 - M5: Last week I bought motorbikes and they are cool
 - M6: Some messages about bicycles and motorbikes, that are free, are spam messages
