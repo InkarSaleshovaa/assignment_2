@@ -5,7 +5,7 @@ from sklearn.metrics import precision_score, recall_score, f1_score
 import pandas as pd
 
 # read data
-df = pd.read_csv('data.csv')
+df = pd.read_csv('data.csv') # data.csv - IMBD dataset
 X = df['review']
 
 # split data into training and test datasets
