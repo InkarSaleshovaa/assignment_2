@@ -21,7 +21,7 @@ vec.fit(X)
 model = MultinomialNB()
 model.fit(vec.transform(x), y)
 
-# compute metrics for test dataset
+# compute mean sentiments using mulNB and calculate metrics for test dataset
 print('Precision score - ', precision_score(model.predict(vec.transform(x_)), y_))
 print('Recall score - ', recall_score(model.predict(vec.transform(x_)), y_))
 print('F1 score - ', f1_score(model.predict(vec.transform(x_)), y_))
