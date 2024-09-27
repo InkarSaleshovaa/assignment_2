@@ -45,7 +45,7 @@ Unique tokens: [buy, bicycles, for, free, and, motorbikes, rides, easy, let's, g
 - p(spam | normal) = 0.04762
 
 ### Probability of the sentence generated under classes (spam | normal)
-- Sentence: Cool bicycles and motorbikes
+- **Sentence**: Cool bicycles and motorbikes
 - p(sentence & spam) = p(cool | spam) x p(bicyles | spam) x p(and | spam) x p(motorbikes | spam) x p(spam) = 0.05556 x 0.08333 x 0.05556 x 0.08333 x (14 / 34) = 8.826252680946663x10^-6
 - p(sentence & normal) = p(cool | normal) x p(bicyles | normal) x p(and | normal) x p(motorbikes | normal) x p(normal) = 0.04762 × 0.09524 × 0.04762 × 0.04762 x (20 / 34) = 6.0497668600321895x10^-6
 
